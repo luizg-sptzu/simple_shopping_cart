@@ -12,8 +12,7 @@ function ProductCard({info}) {
             <div className="card__information">
                 <h3 className="price">${price}</h3>
                 <h2 className="title">{title} | <FaStar /> {rating}</h2>
-                <h4>{category}</h4>
-                <h4></h4>
+                <h4 className='category'>{category}</h4>
             </div>
             <button title='Add to cart' className="add"><FaPlus /></button>
         </section>

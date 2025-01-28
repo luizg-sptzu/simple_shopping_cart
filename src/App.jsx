@@ -1,14 +1,15 @@
 import Header from "./components/Header"
 import Products from "./components/Products"
 import Footer from "./components/Footer"
+import Provider from "./context/Provider"
 
 function App() {
   return (
-    <div>
+    <Provider>
       <Header />
       <Products />
       <Footer />
-    </div>
+    </Provider>
   )
 }
 
