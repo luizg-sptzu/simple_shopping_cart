@@ -14,7 +14,7 @@ function Cart() {
     return ( 
         <section className={`cart ${isVisible ? 'cart--active' : ''}`}>
             <div className="items">
-                { cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />) }
+                {cartItems.map((cartItem, index) => (<CartItem key={`${cartItem.title}-${cartItem.price}-${index}`} data={cartItem} />))}
             </div>
             <div className="overview">
                 ${totalPrice.toFixed(2)}
