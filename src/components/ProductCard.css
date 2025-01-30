@@ -71,6 +71,30 @@
     text-transform: capitalize;
 }
 
+@media (max-width: 459px) {
+    .product-card {
+        width: fit-content;
+        flex-direction: row;
+    }
+
+    .card__image {
+        width: 50%;
+    }
+
+    .card__information {
+        border-top: none;
+        border-left: 1px solid white;
+    }
+
+    .add {
+        display: flex;
+        background-color: #0f0f0f;
+    }
+}
+
 @media (orientation: portrait) {
-    
+    .add {
+        display: flex;
+        background-color: #0f0f0f;
+    }
 }
