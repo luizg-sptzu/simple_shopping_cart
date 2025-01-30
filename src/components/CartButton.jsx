@@ -1,11 +1,15 @@
 import { FaShoppingCart } from "react-icons/fa";
 import './CartButton.css'
+import { useContext } from "react";
+import AppContext from "../context/AppContext";
 
 function CartButton() {
+    const {cartItems, isVisible, setIsVisible} = useContext(AppContext);
+    
     return ( 
-        <button title="Your cart" className="cart__button">
+        <button onClick={() => setIsVisible(!isVisible)} title="Your cart" className="cart__button">
             <FaShoppingCart />
-            <span title="Product count" className="status">1</span>
+            {cartItems.length > 0 && <span title="Product count" className="status">{cartItems.length}</span>}
         </button>
      );
 }

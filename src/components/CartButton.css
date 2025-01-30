@@ -19,6 +19,7 @@
 }
 
 .status {
+    font-family: sans-serif;
     background: yellow;
     width: 1em;
     height: 1em;
